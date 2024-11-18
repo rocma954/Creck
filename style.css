@@ -17,17 +17,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 10px 40px;
     background-color: var(--black);
     border-bottom: 2px solid var(--green);
 }
 
-header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--green);
+.logo img {
+    height: 100px;
+    width: auto;
 }
-
 header nav ul {
     list-style: none;
     display: flex;
@@ -144,3 +142,4 @@ footer {
     border-top: 2px solid var(--green);
     color: var(--white);
 }
+
