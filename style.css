@@ -1,0 +1,146 @@
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --green: #32CD32; 
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--black);
+    border-bottom: 2px solid var(--green);
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--green);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: var(--green);
+}
+
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: var(--green);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.cta-buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-buttons .btn {
+    background-color: var(--green);
+    color: var(--black);
+}
+
+.cta-buttons .btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--green);
+    color: var(--green);
+}
+
+.cta-buttons .btn:hover,
+.cta-buttons .btn-secondary:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+
+#products {
+    padding: 40px 20px;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product button {
+    background-color: var(--green);
+    color: var(--black);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: var(--white);
+    color: var(--green);
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--black);
+    border-top: 2px solid var(--green);
+    color: var(--white);
+}
