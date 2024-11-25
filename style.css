@@ -143,3 +143,13 @@ footer {
     color: var(--white);
 }
 
+#ordi1{
+    width: 300px;
+    margin-left: 32px;
+    margin-top: 32px;
+    text-align: center;
+}
+
+#ordi1 img {
+    width: 250px;
+}
