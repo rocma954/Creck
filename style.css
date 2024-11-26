@@ -142,14 +142,20 @@ footer {
     border-top: 2px solid var(--green);
     color: var(--white);
 }
+main {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    width: 1400px;
+}
 
-#ordi1 {
+#ordi1, #ordi2 {
     margin-top: 16px;
     margin-left: 16px;
     width: 300px;
     text-align: center;
 }
 
-#ordi1 img {
+#ordi1 img, #ordi2 img {
     width: 200px;
 }
