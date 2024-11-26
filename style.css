@@ -142,20 +142,26 @@ footer {
     border-top: 2px solid var(--green);
     color: var(--white);
 }
+
+.body {
+    display: flex;
+    justify-content: center
+}
+
 main {
     display: flex;
     flex-direction: row;
-    background-color: #fff;
-    width: 1400px;
+    background-color: lightgrey;
+    width: 1300px;
 }
 
-#ordi1, #ordi2 {
+.ordi {
     margin-top: 16px;
     margin-left: 16px;
     width: 300px;
     text-align: center;
 }
 
-#ordi1 img, #ordi2 img {
+.ordi img {
     width: 200px;
 }
