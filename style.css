@@ -143,6 +143,7 @@ footer {
     color: var(--white);
 }
 
+
 #PCBureauAccueil img{
     width: 450px;
     height: 700px;
@@ -151,4 +152,15 @@ footer {
 #PCBureauGamingAccueil{
     width: auto;
     height: 230px;
+
+#ordi1{
+    width: 300px;
+    margin-left: 32px;
+    margin-top: 32px;
+    text-align: center;
+}
+
+#ordi1 img {
+    width: 250px;
+
 }
