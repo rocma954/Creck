@@ -180,3 +180,7 @@ main {
     background-color: var(--white);
     color: var(--green);
 }
+
+.ordi a {
+    color: white;
+}
