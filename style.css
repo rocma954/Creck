@@ -148,10 +148,26 @@ footer {
     justify-content: center
 }
 
+
 main {
     display: flex;
-    flex-direction: row;
-    width: 1300px;
+    flex-direction: column; /* Colonne pour empiler les lignes */
+    gap: 20px; /* Espace entre les lignes */
+    align-items: center; /* Centre les lignes horizontalement */
+    width: 100%; /* Adapte à la largeur disponible */
+    padding: 20px;
+}
+
+#ligne1, #ligne2 {
+    display: flex;
+    flex-wrap: wrap; /* Permet d'ajuster les produits si la ligne est trop longue */
+    gap: 10px; /* Espace entre les produits */
+    justify-content: center; /* Centre les produits sur chaque ligne */
+    width: 100%; /* Adapte à la largeur disponible */
+}
+
+#ligne2 {
+    padding-top: 150px;
 }
 
 .ordi {
