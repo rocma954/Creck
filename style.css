@@ -143,6 +143,9 @@ footer {
     color: var(--white);
 }
 
+#about {
+    margin-top: 164px;
+}
 button {
     background-color: var(--green);
     color: var(--black);
@@ -176,7 +179,7 @@ main {
 
 
 
-#ligne1, #ligne2 {
+#ligne1, #ligne2, #ligne3 {
     display: flex;
     flex-wrap: wrap; /* Permet d'ajuster les produits si la ligne est trop longue */
     gap: 10px; /* Espace entre les produits */
@@ -184,8 +187,8 @@ main {
     width: 100%; /* Adapte à la largeur disponible */
 }
 
-#ligne2 {
-    padding-top: 150px;
+#ligne2, #ligne3 {
+    padding-top: 100px;
 }
 
 .ordi {
@@ -198,6 +201,7 @@ main {
 .ordi img {
     width: 200px;
 }
+
 
 .ordi button {
     background-color: var(--green);
@@ -222,15 +226,20 @@ main {
 
 
 
-#main-ordi1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+#main-ordi{
+    display: flex; /* Active le modèle flexbox */
+    justify-content: space-between; /* #gauche à gauche, #droite à droite */
+    align-items: center; /* Centre les éléments verticalement */
+    padding: 20px; /* Ajoute un espace intérieur */
+    gap: 20px; /* Espace entre #gauche et #droite */
 }
 
+
 #gauche {
-    width: 1000px;
-    justify-content: center;
+    display: flex; /* Active le modèle flexbox */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    flex: 1; /* Permet à #gauche de prendre plus de place si nécessaire */
 }
 
 h1 {
@@ -238,14 +247,45 @@ h1 {
 }
 
 #gauche img {
-    width: 700px;
+    max-width: 100%; /* Limite la largeur à celle de son conteneur */
+    height: 700px; /* Maintient les proportions */
+    border-radius: 10px; /* Optionnel : ajoute des coins arrondis */
 }
 
 
 #droite {
-    width: 600px;
+    width: 600px; /* Taille fixe */
+    text-align: left; /* Alignement du texte */
 }
 
 #droite button {
-    width: 500px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
 }
+
+.product-description {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.product-description h2 {
+    color: #32CD32; /* Utilise la couleur verte de ta palette */
+    margin-bottom: 10px;
+}
+
+.product-description ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+
+
