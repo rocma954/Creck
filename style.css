@@ -162,3 +162,64 @@ footer {
     border-top: 2px solid var(--green);
     color: var(--white);
 }
+.contact-section {
+    padding: 30px 20px;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+}
+
+.contact-section h1 {
+    color: var(--green);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--white);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--green);
+    border-radius: 5px;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 0.9rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--white);
+}
+
+.contact-form .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--green);
+    color: var(--black);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form .btn:hover {
+    background-color: var(--white);
+    color: var(--green);
+}
