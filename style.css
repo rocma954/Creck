@@ -1,4 +1,3 @@
-
 :root {
     --black: #000;
     --white: #fff;
@@ -11,7 +10,6 @@ body {
     background-color: var(--black);
     color: var(--white);
 }
-
 
 header {
     display: flex;
@@ -26,6 +24,7 @@ header {
     height: 100px;
     width: auto;
 }
+
 header nav ul {
     list-style: none;
     display: flex;
@@ -44,7 +43,6 @@ header nav ul li a {
 header nav ul li a:hover {
     color: var(--green);
 }
-
 
 .hero {
     text-align: center;
@@ -89,19 +87,23 @@ header nav ul li a:hover {
     color: var(--black);
 }
 
-
-#products {
+.product-section {
     padding: 40px 20px;
     background-color: var(--black);
     color: var(--white);
+}
+
+.product-section h2 {
     text-align: center;
+    margin-bottom: 20px;
+    color: var(--green);
 }
 
 .product-list {
     display: flex;
     justify-content: center;
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .product {
@@ -109,22 +111,41 @@ header nav ul li a:hover {
     color: var(--black);
     border-radius: 10px;
     padding: 20px;
-    max-width: 300px;
+    max-width: 250px;
     text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .product img {
     max-width: 100%;
     border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--green);
+}
+
+.product p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
 }
 
 .product a {
+    display: inline-block;
+    text-decoration: none;
     background-color: var(--green);
     color: var(--black);
     padding: 10px 20px;
-    border: none;
     border-radius: 5px;
-    cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
 }
@@ -134,33 +155,10 @@ header nav ul li a:hover {
     color: var(--green);
 }
 
-
 footer {
     text-align: center;
     padding: 20px;
     background-color: var(--black);
     border-top: 2px solid var(--green);
     color: var(--white);
-}
-
-
-#PCBureauAccueil img{
-    width: 450px;
-    height: 700px;
-}
-
-#PCBureauGamingAccueil{
-    width: auto;
-    height: 230px;
-}
-#ordi1{
-    width: 300px;
-    margin-left: 32px;
-    margin-top: 32px;
-    text-align: center;
-}
-
-#ordi1 img {
-    width: 250px;
-
 }
