@@ -20,6 +20,19 @@ header {
     border-bottom: 2px solid var(--green);
 }
 
+#products{
+    padding: 40px 20px;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+}
+
+#about{
+    padding: 40px 20px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
 .logo img {
     height: 100px;
     width: auto;
