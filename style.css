@@ -187,7 +187,7 @@ main {
     width: 100%; /* Adapte à la largeur disponible */
 }
 
-#ligne2, #ligne3 {
+#ligne2 {
     padding-top: 100px;
 }
 
@@ -247,15 +247,15 @@ h1 {
 }
 
 #gauche img {
-    max-width: 100%; /* Limite la largeur à celle de son conteneur */
-    height: 700px; /* Maintient les proportions */
-    border-radius: 10px; /* Optionnel : ajoute des coins arrondis */
+    max-width: 100%; 
+    height: 700px;
+    border-radius: 10px; 
 }
 
 
 #droite {
-    width: 600px; /* Taille fixe */
-    text-align: left; /* Alignement du texte */
+    width: 600px; 
+    text-align: left; 
 }
 
 #droite button {
@@ -278,7 +278,7 @@ h1 {
 
 
 .product-description h2 {
-    color: #32CD32; /* Utilise la couleur verte de ta palette */
+    color: #32CD32; 
     margin-bottom: 10px;
 }
 
@@ -287,5 +287,6 @@ h1 {
     margin-left: 20px;
 }
 
-
-
+a{
+    text-decoration: none;
+}
