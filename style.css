@@ -27,7 +27,7 @@ header {
     text-align: center;
 }
 
-#about{
+.footer{
     padding: 40px 20px;
     background-color: var(--black);
     color: var(--white);
@@ -233,9 +233,7 @@ footer {
 }
 
 
-#about {
-    margin-top: 164px;
-}
+
 button {
     background-color: var(--green);
     color: var(--black);
@@ -345,7 +343,7 @@ a {
 a:hover {
     border-radius: 20px;
 }
-#PC button{
+
 
 .ordi img {
     width: 200px;
