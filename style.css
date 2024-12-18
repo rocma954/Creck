@@ -1,4 +1,3 @@
-
 :root {
     --black: #000;
     --white: #fff;
@@ -12,7 +11,6 @@ body {
     color: var(--white);
 }
 
-
 header {
     display: flex;
     justify-content: space-between;
@@ -22,10 +20,24 @@ header {
     border-bottom: 2px solid var(--green);
 }
 
+#products{
+    padding: 40px 20px;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+}
+
+#about{
+    padding: 40px 20px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
 .logo img {
     height: 100px;
     width: auto;
 }
+
 header nav ul {
     list-style: none;
     display: flex;
@@ -44,7 +56,6 @@ header nav ul li a {
 header nav ul li a:hover {
     color: var(--green);
 }
-
 
 .hero {
     text-align: center;
@@ -89,36 +100,143 @@ header nav ul li a:hover {
     color: var(--black);
 }
 
-
-#products {
+.product-section {
     padding: 40px 20px;
     background-color: var(--black);
     color: var(--white);
+}
+
+.product-section h2 {
     text-align: center;
+    margin-bottom: 20px;
+    color: var(--green);
 }
 
 .product-list {
     display: flex;
     justify-content: center;
-    gap: 20px;
     flex-wrap: wrap;
-}
+    gap: 20px;
+      }
 
 .product {
     background-color: var(--white);
     color: var(--black);
     border-radius: 10px;
     padding: 20px;
-    max-width: 300px;
+    max-width: 250px;
     text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .product img {
     max-width: 100%;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-.product button {
+.product h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--green);
+}
+
+.product p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.product a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--green);
+    color: var(--black);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.product a:hover {
+    background-color: var(--white);
+    color: var(--green);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--black);
+    border-top: 2px solid var(--green);
+    color: var(--white);
+}
+.contact-section {
+    padding: 30px 20px;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+}
+
+.contact-section h1 {
+    color: var(--green);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--white);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--green);
+    border-radius: 5px;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 0.9rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--white);
+}
+
+.contact-form .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--green);
+    color: var(--black);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#about {
+    margin-top: 164px;
+}
+button {
     background-color: var(--green);
     color: var(--black);
     padding: 10px 20px;
@@ -129,26 +247,47 @@ header nav ul li a:hover {
     transition: background-color 0.3s;
 }
 
-.product button:hover {
+button:hover {
     background-color: var(--white);
     color: var(--green);
 }
 
+.body {
+    display: flex;
+    justify-content: center
+}
 
-footer {
-    text-align: center;
+
+main {
+    display: flex;
+    flex-direction: column; /* Colonne pour empiler les lignes */
+    gap: 20px; /* Espace entre les lignes */
+    align-items: center; /* Centre les lignes horizontalement */
+    width: 100%; /* Adapte à la largeur disponible */
     padding: 20px;
-    background-color: var(--black);
-    border-top: 2px solid var(--green);
-    color: var(--white);
 }
 
-#ordi1{
+
+
+#ligne1, #ligne2, #ligne3 {
+    display: flex;
+    flex-wrap: wrap; /* Permet d'ajuster les produits si la ligne est trop longue */
+    gap: 10px; /* Espace entre les produits */
+    justify-content: center; /* Centre les produits sur chaque ligne */
+    width: 100%; /* Adapte à la largeur disponible */
+}
+
+#ligne2 {
+    padding-top: 100px;
+}
+
+.ordi {
+    margin-top: 16px;
+    margin-left: 16px;
     width: 300px;
-    margin-left: 32px;
-    margin-top: 32px;
     text-align: center;
 }
+
 
 #ordi1 img {
     width: 250px;
@@ -207,6 +346,14 @@ a:hover {
     border-radius: 20px;
 }
 #PC button{
+
+.ordi img {
+    width: 200px;
+}
+
+
+.ordi button {
+
     background-color: var(--green);
     color: var(--black);
     padding: 10px 20px;
@@ -216,6 +363,7 @@ a:hover {
     font-weight: bold;
     transition: background-color 0.3s;
 }
+
 #PC button:hover {
     background-color: var(--white);
     color: var(--green);
@@ -236,6 +384,59 @@ a:hover {
 }
 
 
+
+
+.ordi button:hover {
+    background-color: var(--white);
+    color: var(--green);
+}
+
+.ordi a {
+    color: white;
+}
+
+
+
+
+#main-ordi{
+    display: flex; /* Active le modèle flexbox */
+    justify-content: space-between; /* #gauche à gauche, #droite à droite */
+    align-items: center; /* Centre les éléments verticalement */
+    padding: 20px; /* Ajoute un espace intérieur */
+    gap: 20px; /* Espace entre #gauche et #droite */
+}
+
+
+#gauche {
+    display: flex; /* Active le modèle flexbox */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    flex: 1; /* Permet à #gauche de prendre plus de place si nécessaire */
+}
+
+h1 {
+    padding-left: 24px;
+}
+
+#gauche img {
+    max-width: 100%; 
+    height: 700px;
+    border-radius: 10px; 
+}
+
+
+#droite {
+    width: 600px; 
+    text-align: left; 
+}
+
+#droite button {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+
 .product-description {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -247,12 +448,13 @@ a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+ 
+
 
 .product-description h2 {
-    color: #32CD32; /* Utilise la couleur verte de ta palette */
+    color: #32CD32; 
     margin-bottom: 10px;
 }
- 
 .product-description ul {
     list-style-type: disc;
     margin-left: 20px;
@@ -280,3 +482,14 @@ a:hover {
 #imgPC {
     width: 330px;
 }
+
+a{
+    text-decoration: none;
+}
+
+.contact-form .btn:hover {
+    background-color: var(--white);
+    color: var(--green);
+}
+
+
